@@ -21,6 +21,7 @@ function FileUpload() {
                     clearInterval(interval);
                     setUpload((prevStatus) => {
                         const status = [...prevStatus];
+                        console.log(status)
                         status[index] = 'success';
                         return status;
                     });
